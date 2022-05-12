@@ -1,5 +1,29 @@
 package com.caresoft.clinicapp;
 
-public class AdminUser extends User implements HIPAACompliantUser, HIPAAComliantAdmin {
+import java.util.ArrayList;
 
+public class AdminUser extends User implements HIPAACompliantUser, HIPAAComliantAdmin {
+	
+	public AdminUser(Integer id) {
+		super(id);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public ArrayList<String> reportSecurityIncidents() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean assignPin(int pin) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean accessAuthorized(Integer confirmedAuthID) {
+		// TODO Auto-generated method stub
+		return false;
+	}
 }
