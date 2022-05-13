@@ -5,7 +5,6 @@ public interface HIPAAComliantAdmin {
 	
 	abstract ArrayList<String> reportSecurityIncidents();
     
-    // DEFAULT IMPLEMENTED METHODS
     // Used to print security incidents. 
     public default void printSecurityIncidents() {
         System.out.println(reportSecurityIncidents());
